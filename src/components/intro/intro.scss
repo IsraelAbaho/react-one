@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: aqua;
+
+  .toggleButton {
+    cursor: pointer;
+    &:hover .hum {
+      background: brown;
+    }
+    .hum {
+      content: "";
+      height: 5px;
+      width: 25px;
+      background: black;
+      margin: 5px 0;
+      border-radius: 3rem;
+    }
+  }
+
+  .navBar{
+      position: absolute;
+      top: -30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgb(245, 244, 244);
+      width: 80%;
+      border-radius: 1rem;
+      text-align: center;
+      padding: 2rem;
+  }
+  .show{
+      top: 25%;
+  }
+}
